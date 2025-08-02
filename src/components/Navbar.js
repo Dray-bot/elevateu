@@ -27,6 +27,7 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
+          <Link href="/" className="text-gray-700 hover:text-orange-500 transition">Home</Link>
           <Link href="/courses" className="text-gray-700 hover:text-orange-500 transition">Courses</Link>
           <Link href="/community" className="text-gray-700 hover:text-orange-500 transition">Community</Link>
 
@@ -53,6 +54,7 @@ export default function Navbar() {
             className="md:hidden bg-white shadow-md overflow-hidden"
           >
             <div className="flex flex-col items-center py-4 gap-4">
+              <Link href="/" className="text-gray-700 hover:text-orange-500 transition" onClick={() => setMobileMenuOpen(false)}>Home</Link>
               <Link href="/courses" className="text-gray-700 hover:text-orange-500 transition" onClick={() => setMobileMenuOpen(false)}>Courses</Link>
               <Link href="/community" className="text-gray-700 hover:text-orange-500 transition" onClick={() => setMobileMenuOpen(false)}>Community</Link>
 
